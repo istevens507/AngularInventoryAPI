@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+.form-label{
+    font-weight: bold ;
+}
+
+input.invalid{
+    border-color: red;
+}
+.btn-info.disabled, .btn-info:disabled {
+    color: white;
+
+}

@@ -1,0 +1,14 @@
+* src
++----- App
+|     +--- product-details
+|     |   |--product-details.component.ts | .html | .css
+|     |   +---product-detail-form
+|     |   |  |--product-detail-form.component.ts | .html | .css
+|     |  
+|     +---shared
+|     |   |--product-detail.service.ts
+|     |   |--product-detail.model.ts
+|     |
+|     |--app.module.ts
+|
+|--index.html (cdn path for bootstrap & fa icons)
