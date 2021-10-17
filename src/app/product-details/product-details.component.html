@@ -17,6 +17,7 @@
                 <th>Product Name</th>
                 <th>Quantity</th>
                 <th>Date Created</th>
+                <th>Date Updated</th>
                 <th></th>
             </tr>
         </thead>
@@ -25,6 +26,7 @@
                 <td>{{item.productName}}</td>
                 <td>{{item.quantity}}</td>
                 <td>{{item.dateCreated}}</td>
+                <td>{{item.dateUpdated}}</td>
                 <td>
                     <i class="far fa-edit fa-lg text-default" (click)="PopulateForm(item)"></i>&nbsp;
                     <i class="far fa-trash-alt fa-lg text-danger" (click)="onDelete(item.productDetailID)"></i>                  
