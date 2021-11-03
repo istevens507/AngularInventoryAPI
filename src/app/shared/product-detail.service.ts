@@ -8,7 +8,6 @@ import {HttpClient} from "@angular/common/http";
 export class ProductDetailService {
 
   constructor(private http:HttpClient) { }
-
   formData: ProductDetail = new ProductDetail();
   list: ProductDetail[];
   readonly baseURL = 'http://localhost:59720/api/ProductDetail';

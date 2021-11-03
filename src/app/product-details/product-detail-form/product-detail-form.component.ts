@@ -14,19 +14,31 @@ export class ProductDetailFormComponent implements OnInit {
 
   // dependency injection
   constructor(public service:ProductDetailService, private toastr:ToastrService) { }
-
+  public workInProgress : boolean = false;
   ngOnInit(): void {
+  
   }
 
   onSubmit(form:NgForm){
-   
-   if (this.service.formData.productDetailID == 0){
+  
+   if (this.service.formData.productDetailID == 0) {
+      
+       this.workInProgress = true;  
+       // simulates processing a request
+       setTimeout(()=> {                          
+         this.InsertProductDetail(form); // insert record
+         this.workInProgress = false;
+       }, 3000);
 
-       this.InsertProductDetail(form);
    }
    else{
+      this.workInProgress = true;  
+      // simulates processing a request
+      setTimeout(()=> {                          
+        this.UpdateProductDetail(form); // Update record
+        this.workInProgress = false;
+      }, 3000);
 
-      this.UpdateProductDetail(form);
    }
    
   }
