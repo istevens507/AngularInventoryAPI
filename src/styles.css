@@ -10,3 +10,12 @@ input.invalid{
     color: white;
 
 }
+
+.table tbody {
+  background-color: #DDE6EE;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    background-color: #7799BB !important;
+    color:white
+  }
